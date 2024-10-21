@@ -1,1 +1,23 @@
-<h1>Main</h1>
+<div class="container mt-2">
+    <div class="row">
+      <div *ngFor="let product of products" class="col-md-2 mt-5">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <p>Stock Quantity: {{ product.stockQuantity }}</p>
+            <p>Price: {{ product.price}} $</p>
+            <p>Product ID: {{ product.id }}</p>
+
+            <!-- Miktar Giriş Input'u -->
+            <input type="number" [(ngModel)]="quantity" min="1" max="{{ product.stockQuantity }}" class="form-control mt-2" placeholder="Enter quantity">
+
+            <!-- Satın Alma Butonu -->
+            <button class="btn btn-primary mt-2" (click)="buyProduct(product)">
+                Buy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
