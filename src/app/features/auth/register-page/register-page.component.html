@@ -1,0 +1,73 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-5">Sign Up</h3>
+  
+              <form [formGroup]="registerForm">
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-control form-control-lg"
+                    formControlName="firstName"
+                  />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    class="form-control form-control-lg"
+                    formControlName="lastName"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="email">E-Mail</label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-control form-control-lg"
+                    formControlName="email"
+                  />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="phoneNumber">Phone Number</label>
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    class="form-control form-control-lg"
+                    formControlName="phoneNumber"
+                  />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-control form-control-lg"
+                    formControlName="password"
+                  />
+                </div>
+  
+                <button
+                  class="btn btn-primary btn-lg btn-block"
+                  type="submit"
+                 
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
